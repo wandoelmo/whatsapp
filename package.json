@@ -1,0 +1,48 @@
+{
+  "name": "whatsapp",
+  "version": "1.0.0",
+  "description": "Chat em tempo real",
+  "main": "index.js",
+  "scripts": {
+    "client:dev": "webpack-dev-server --mode development",
+    "client:build": "webpack --mode development --hide-modules",
+    "client:watch": "npm run client:build -- --watch",
+    "client:production": "webpack --mode production --hide-modules",
+    "start": "node ./src/server"
+  },
+  "keywords": [
+    "vuejs",
+    "nodejs",
+    "socket.io",
+    "express"
+  ],
+  "author": "Vitor Leonel <falecom@vitorleonel.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "html-webpack-plugin": "^4.0.0-alpha",
+    "node-sass": "^4.9.0",
+    "sass-loader": "^7.0.3",
+    "vue-loader": "^15.2.4",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^4.12.2",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "mongoose": "^5.1.7",
+    "mongoose-timestamp": "^0.6.0",
+    "socket.io": "^2.1.1",
+    "socket.io-client": "^2.1.1",
+    "vue": "^2.5.16",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  }
+}
